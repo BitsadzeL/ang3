@@ -1,3 +1,16 @@
 <p>product-dashboard works!</p>
 <button (click)="goToMain()">go to main page</button>
-<button  (click)="goToAdd()">go to add product page</button>
+<button (click)="goToAdd()">go to add product page</button>
+
+<div *ngIf="products.length > 0">
+    <h3>Existing Products</h3>
+    <ul>
+        <li *ngFor="let product of products">
+            <div>
+                {{ product.name }} - Price: {{ product.price }}
+            </div>
+
+            <br>
+        </li>
+    </ul>
+</div>

@@ -25,7 +25,7 @@ export class ProductDashboardComponent implements OnInit {
   }
 
   getProducts(){
-    this.prodService.getAllProducts();
+    this.products=this.prodService.getAllProducts();
 
   }
 

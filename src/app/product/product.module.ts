@@ -7,15 +7,22 @@ import { ProductDashboardComponent } from './product-dashboard/product-dashboard
 import { ReactiveFormsModule } from '@angular/forms';
 
 
+
 @NgModule({
   declarations: [
     AddProductComponent,
-    ProductDashboardComponent
+    ProductDashboardComponent,
+    
   ],
   imports: [
     CommonModule,
     ProductRoutingModule,
-    ReactiveFormsModule
-  ]
+    ReactiveFormsModule,
+    
+    
+  ],
+
+
+
 })
 export class ProductModule { }
